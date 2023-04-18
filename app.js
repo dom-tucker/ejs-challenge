@@ -44,6 +44,11 @@ app.get('/compose', function(req, res) {
 });
 
 
+app.post("/", function(req, res){
+  var usersText = req.body.userInput;
+  console.log(usersText);
+});
+
 
 
 
