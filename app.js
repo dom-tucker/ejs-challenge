@@ -44,9 +44,17 @@ app.get('/compose', function(req, res) {
 });
 
 
-app.post("/", function(req, res){
-  var usersText = req.body.userInput;
-  console.log(usersText);
+app.post("/compose", function(req, res){
+
+  let postObject =  {
+    title: req.body.userInput,
+    post: req.body.submission
+  }
+
+  console.log(postObject.title) //when user enters text into Title field will console log it into Hyper
+  console.log(postObject.post); //when user enters text into Post field will console log it into Hyper
+
+
 });
 
 
