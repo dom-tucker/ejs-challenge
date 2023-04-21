@@ -47,8 +47,8 @@ app.get('/compose', function(req, res) {
 app.post("/compose", function(req, res){
 
   let postObject =  {
-    title: req.body.userInput,
-    post: req.body.submission
+    title: req.body.userInput, //references the title input 
+    post: req.body.submission  //references the post textarea
   }
 
   console.log(postObject.title) //when user enters text into Title field will console log it into Hyper
