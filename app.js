@@ -53,6 +53,7 @@ app.post("/compose", function(req, res){
 
   console.log(postObject.title) //when user enters text into Title field will console log it into Hyper
   console.log(postObject.post); //when user enters text into Post field will console log it into Hyper
+  console.log("nick code beatdown")
 
 
 });
