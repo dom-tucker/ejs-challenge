@@ -3,7 +3,14 @@
  <h1> Home </h1>
  <p><%= loremIpsumText %></p>
 
-<% console.log(homePosts) %>
+
+
+<!-- let posts = []; (put EJS here) -->
+
+<% homePosts.forEach(function(element) { %>
+    <% console.log(element.title) %>
+<% }); %>
+
 
  <%- include("partials/footer") -%>
 
