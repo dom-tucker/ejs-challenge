@@ -5,10 +5,9 @@
 
 
 
-<!-- let posts = []; (put EJS here) -->
-
 <% homePosts.forEach(function(element) { %>
-    <% console.log(element.title) %>
+    <h1><%= element.title %></h1>
+    <p><%= element.post %> </p>
 <% }); %>
 
 

@@ -21,6 +21,22 @@ app.use(express.static("public"));
 
 
 
+app.get("/posts/:topic", function(req, res) {
+   const requestedTitle = req.params.topic;
+
+   posts.forEach(function(post) {
+    let storedTitle = post.title
+   
+   if (storedTitle === requestedTitle) {
+    console.log("Match found!")
+   } else {
+    console.log("No match found")
+   }
+
+  });
+ });
+ 
+ 
 app.get('/', function(req, res) {
   res.render("home", {
     loremIpsumText: homeStartingContent,
